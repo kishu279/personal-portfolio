@@ -9,12 +9,12 @@ import SkillsSection from "@/components/sections/SkillsSection";
 
 export default function Home() {
   return (
-    <section className="relative container mx-auto max-w-5xl">
+    <section className="relative container mx-auto max-w-3xl">
       <div className="flex flex-col items-center justify-center py-10 space-y-10">
         {/* Hero Section */}
         <HeroSection />
 
-        <AboutSection />
+        {/* <AboutSection />
 
         <LearningSection />
 
@@ -26,7 +26,7 @@ export default function Home() {
 
         <MyDoingsSection />
 
-        <ConnectSection />
+        <ConnectSection /> */}
       </div>
     </section>
   );
