@@ -35,38 +35,42 @@ export default function HeroSection() {
   return (
     <section className="relative">
       {/* title  and description */}
-      <div className="flex flex-col p-4 space-y-6">
+      <div className="flex flex-col md:p-6 space-y-6">
         <div className="">
           <h1 className="text-5xl font-semibold">Kishu</h1>
           {/* some more to add */}
         </div>
         {/* description and image */}
-        <div className="grid grid-cols-2 items-center justify-center w-full space-y-2">
-          <p className="w-[600px]">
-            I am a Full Stack Developer passionate about creating scalable and
-            user-friendly applications. I enjoy building innovative solutions
-            that combine simplicity with performance while exploring new
-            technologies to improve my skills. My focus is on writing clean,
-            maintainable code and delivering projects that not only work
-            efficiently but also bring meaningful value and impact. Little{" "}
-            <span className={`${edu_font.className} border border-red-600`}>
-              Asthetic
-            </span>
-            . Love the{" "}
-            <span
-              className={`${edu_font.className} capitalize border-blue-300 border-2`}
-            >
-              font mono
-            </span>
-            .
-          </p>
-          <Image
-            src={"/logo/my_image.jpg"}
-            alt="my_image"
-            height={120}
-            width={120}
-            className="rounded-2xl justify-self-end"
-          />
+        <div className="flex flex-col space-y-2">
+          <div className="flex relative w-full items-center justify-center gap-4">
+            <p className="lg:w-[600px] md:w-[500px] ">
+              I am a Full Stack Developer passionate about creating scalable and
+              user-friendly applications. I enjoy building innovative solutions
+              that combine simplicity with performance while exploring new
+              technologies to improve my skills. My focus is on writing clean,
+              maintainable code and delivering projects that not only work
+              efficiently but also bring meaningful value and impact. Little{" "}
+              <span className={`${edu_font.className} border border-red-600`}>
+                Asthetic
+              </span>
+              . Love the{" "}
+              <span
+                className={`${edu_font.className} capitalize border-blue-300 border-2`}
+              >
+                font mono
+              </span>
+              .
+            </p>
+            <div className="">
+              <Image
+                src={"/logo/my_image.jpg"}
+                alt="my_image"
+                height={130}
+                width={130}
+                className="rounded-2xl object-cover h-auto max-w-[150px]"
+              />
+            </div>
+          </div>
           <div className="col-span-2 flex items-center gap-1 text-md font-light">
             <Globe className="opacity-75 size-5" />
             <p>India</p>
